@@ -1,0 +1,23 @@
+h3,h5{
+    color: white;
+}
+h3{
+    background-color: rgba(8, 61, 113, 0.653);
+
+}
+.container{
+    --bs-gutter-x: 0 !important;
+}
+.checked {
+    color: white;
+}
+.row{
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.col-md-6{
+  h5{
+    margin-top: 10px;
+  }
+    margin-bottom: 1rem;
+}

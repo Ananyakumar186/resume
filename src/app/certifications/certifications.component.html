@@ -1,0 +1,17 @@
+<h2>Certificates</h2>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let cer of certifications">
+      <div class="card mb-3">
+        <img [src]="cer.img" class="card-img-top" height="150" width="60" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{cer.title}}</h5>
+          <span class="card-text">{{cer.issuedBy}}</span><br>
+          <a href="javascript:void(0);" class="btn btn-primary" (click)="openCertificate(cer.link)" style="margin-top: 1rem;">Show Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

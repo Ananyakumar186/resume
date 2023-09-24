@@ -1,0 +1,21 @@
+.occupation-name{
+    flex-direction: row;
+    display: flex;
+    vertical-align: middle;
+}
+h3{
+    margin-top: auto;
+    margin-bottom: 0;
+    >span{
+        font-weight: normal;
+        font-size: 16px;
+    }
+}
+img{
+    padding-right: 1rem;
+}
+.company{
+    font-style: italic;
+    margin-left: 4.5em;
+}
+
