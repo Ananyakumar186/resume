@@ -1,0 +1,118 @@
+<div class="container">
+  <div class="column1">
+      <div class="card" style="margin-bottom: 1rem;background-color:rgb(10, 78, 161);">
+        <div *ngIf="isMobile">
+      <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="80" class="center"/>
+        </div>
+        <div *ngIf="isMobile==false">
+      <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="120" class="center"/>
+      </div>
+          <div class="card-body about">
+
+       <span>Ananya Kumar</span>
+        <span>Software Engineer</span>
+        <span>Eton Solutions Pvt Ltd</span>
+  </div>
+</div>
+   <div class="contact">
+  <h3>Contact</h3>
+  <div class="row" style="margin-bottom: 1rem;">
+    <div class="col-md-6">
+      <img src="./../assets/images/phone.png" alt="Phone" height="25">
+      <span>9845369580</span>
+    </div>
+    <div class="col-md-6">
+      <img src="./../assets/images/linkedin.png" alt="LinkedIn" height="25">
+      <span><a href="https://www.linkedin.com/in/ananya-kumar-0365811a2/" target="_blank">LinkedIn</a></span>
+    </div>
+    <div class="col-md-6">
+      <img src="./../assets/images/github.png" alt="GitHub" height="25">
+      <span><a href="https://github.com/Ananyakumar186" target="_blank">GitHub</a></span>
+    </div>
+    <div class="col-md-6">
+      <img src="./../assets/images/hackker.png" alt="HackerRank" height="25">
+      <span><a href="https://www.hackerrank.com/ananyakumar565?hr_r=1" target="_blank">HackerRank</a></span>
+    </div>
+    <div class="col">
+      <img src="./../assets/images/gmail.png" alt="Gmail" height="25">
+      <span style="word-wrap: break-word;">ananyakumar565@gmail.com</span>
+    </div>
+  </div>
+</div>
+      <div class="skills">
+      <app-skills></app-skills>
+    </div>
+  </div>
+  <div class="column2">
+    <div class="container">
+
+      <div class="text-left desc">
+          <p>Embracing the philosophy of <i><u>"Sometimes you win, sometimes you learn"</u></i>
+          has instilled in me the resilience to view challenges as opportunities
+          for growth. My interests include watching documentaries, appreciating
+          music, enjoying anime, indulging in gaming, and pursuing physical
+          well-being through walking.</p>
+      </div>
+    </div>
+
+    <div class="experience">
+      <app-experience></app-experience>
+    </div>
+
+    <div class="education">
+      <h2>Education</h2>
+      <div class="card mb-3" style="max-width:100%; border: none;" *ngFor="let edu of education">
+      <div class="row g-0">
+        <div class="col-md-2">
+          <img [src]="edu.img" class="img-fluid rounded-start" alt="image">
+        </div>
+          <div class="col-md-8">
+          <div class="card-body">
+        <h3  class="card-title">{{ edu.name }}</h3>
+        <span>{{ edu.occupation }}</span><br />
+        <span>{{ edu.year }}</span><br>
+        <span>{{ edu.grade }}</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="certifications">
+      <app-certifications></app-certifications>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      <app-projects></app-projects>
+    </div>
+
+    <div class="additional">
+      <div class="awards">
+        <h2>Honors and Awards</h2>
+        <ul>
+          <li>
+            <h4>Best New Comer Mar-2023</h4>
+            <span>Issued by Eton Solutions Pvt Ltd</span>
+          </li>
+          <li>
+            <h4>3rd Place in Table Topics (Area Level) Competition</h4>
+            <span>Issued by Toast Masters International · Apr 2023</span>
+          </li>
+        </ul>
+      </div>
+      <div class="organization">
+        <h2>Organization</h2>
+        <ul>
+          <li>
+            <h4>DSC(Developers Student Club) JNNCE</h4>
+            <span>lead coding team member · Nov 2020 - May 2021</span>
+          </li>
+          <li>
+            <h4>Eton Solutions Toast Master CLub</h4>
+            <span>Member · Sep 2022 - Jul 2023</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
