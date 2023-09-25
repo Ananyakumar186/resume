@@ -7,7 +7,7 @@ export class AppService{
 
   constructor(public breakpointObserver: BreakpointObserver) { }
   isMobile(): boolean {
-    return this.breakpointObserver.isMatched('(max-width: 500px)');
+    return this.breakpointObserver.isMatched('(max-width: 400px)');
   }
 
 }
