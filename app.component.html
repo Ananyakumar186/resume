@@ -1,11 +1,11 @@
 <div class="container">
   <div class="column1">
       <div class="card" style="margin-bottom: 1rem;background-color:rgb(10, 78, 161);">
-        <div *ngIf="isMobile">
-      <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="90" class="center"/>
-        </div>
-        <div *ngIf="isMobile==false">
+        <div *ngIf="!(this.appService.isHandset | async)">
       <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="120" class="center"/>
+        </div>
+        <div *ngIf="this.appService.isHandset | async">
+      <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="120" width="90" class="center"/>
       </div>
           <div class="card-body about">
 
