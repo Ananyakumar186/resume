@@ -1,11 +1,16 @@
 <div class="container">
   <div class="column1">
       <div class="card" style="margin-bottom: 1rem;background-color:rgb(10, 78, 161);">
-      <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="120" class="center"/>
+        <div *ngIf="(this.deviceService.isHandset | async)">
+          <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="80" class="center"/>
+        </div>
+        <div *ngIf="!(this.deviceService.isHandset| async)">
+          <img id="profile" src="../assets/images/myphoto.jpg" alt="Ananya" height="140" width="110" class="center"/>
+        </div>
           <div class="card-body about">
-       <span>Ananya Kumar</span>
-        <span>Software Engineer</span>
-        <span>Eton Solutions Pvt Ltd</span>
+          <span>Ananya Kumar</span>
+          <span>Software Engineer</span>
+          <span>Eton Solutions Pvt Ltd</span>
   </div>
 </div>
    <div class="contact">

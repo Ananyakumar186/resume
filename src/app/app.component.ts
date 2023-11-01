@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from 'app.service';
 
 @Component({
   selector: 'app-root',
@@ -30,5 +31,6 @@ export class AppComponent {
       grade:'CGPA 8.6'
     }
   ]
+  constructor(public deviceService: AppService){}
 }
 

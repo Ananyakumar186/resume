@@ -7,7 +7,7 @@ import { BehaviorSubject } from 'rxjs';
 export class AppService{
   isHandset =  new BehaviorSubject<boolean>(false);
   constructor(public breakpointObserver: BreakpointObserver) {
-    breakpointObserver.observe(['(max-width:600px)']).subscribe(result=>{
+    breakpointObserver.observe(['(max-width:800px)']).subscribe(result=>{
       if(result.matches){
         this.isHandset.next(true);
         console.log('ishandset');
