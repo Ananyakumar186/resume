@@ -14,6 +14,12 @@ export class CertificationsComponent {
         link:'../../assets/certificates/Angular_Fundamentals_to_Advanced_Training.pdf'
         },
         {
+        img:"../../assets/images/microsoft.jpeg",
+        title:"Microsoft Azure Fundamentals (A-Z900)",
+        issuedBy:"Microsoft",
+        link:'../../assets/certificates/Azure_Fundamentals.pdf'
+        },
+        {
           img:"../../assets/images/coursera.jpeg",
           title:"Algorithm Toolbox",
           issuedBy:"Coursera",
