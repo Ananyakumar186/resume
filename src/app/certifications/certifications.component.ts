@@ -20,6 +20,12 @@ export class CertificationsComponent {
         link:'../../assets/certificates/Azure_Fundamentals.pdf'
         },
         {
+        img:"../../assets/images/NIIT.jpeg",
+        title:"Building RESTful APIs Using Node.js and Express",
+        issuedBy:"NIIT",
+        link:'../../assets/certificates/CourseraAPICertificate.pdf'
+        },
+        {
           img:"../../assets/images/coursera.jpeg",
           title:"Algorithm Toolbox",
           issuedBy:"Coursera",
